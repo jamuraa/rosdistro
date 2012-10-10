@@ -1090,6 +1090,7 @@ protobuf:
 ps-engine:
   arch: primesense-sensor
   ubuntu: ps-engine
+  debian: ps-engine
   fedora: openni-primesense
 python-pyside:
   ubuntu: python-pyside
