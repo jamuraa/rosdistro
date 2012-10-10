@@ -1047,6 +1047,7 @@ openjdk-6-jdk:
 openni-dev:
   arch: openni
   ubuntu: openni-dev
+  debian: openni-dev
   fedora: openni-devel
 netpbm:
   ubuntu: libnetpbm10-dev
