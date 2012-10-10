@@ -243,6 +243,7 @@ curl:
 daemontools:
   arch: daemontools
   ubuntu: daemontools
+  debian: daemontools
 doxygen:
   arch: doxygen
   debian: doxygen
