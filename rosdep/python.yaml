@@ -46,6 +46,8 @@ python-clearsilver:
   centos: python-clearsilver
 python-couchdb:
   ubuntu: python-couchdb
+python-coverage:
+  ubuntu: python-coverage
 python-cwiid:
   arch: cwiid
   debian: python-cwiid
@@ -78,6 +80,8 @@ python-imaging:
   macports: py26-pil
   gentoo: dev-python/imaging
   freebsd: py27-imaging
+python-kitchen:
+  ubuntu: python-kitchen
 python-libpcap:
   ubuntu: python-libpcap
 python-matplotlib:
@@ -92,6 +96,8 @@ python-matplotlib:
   freebsd: py27-matplotlib
 python-mechanize:
   ubuntu: python-mechanize
+python-mock:
+  ubuntu: python-mock
 python-nose:
   arch: python2-nose
   ubuntu: python-nose
@@ -110,12 +116,12 @@ python-opengl:
   ubuntu: python-opengl
 python-omniorb:
   ubuntu:
-   kermic: python-omniorb2
-   lucid: python-omniorb2
-   maverick: python-omniorb
-   natty: python-omniorb
-   oneiric: python-omniorb
-   precise: python-omniorb
+   lucid: python-omniorb2 omniidl4-python
+   maverick: python-omniorb omniidl-python
+   natty: python-omniorb omniidl-python
+   oneiric: python-omniorb omniidl-python
+   precise: python-omniorb omniidl-python
+   quantal: python-omniorb omniidl-python
 python-paramiko:
   ubuntu: python-paramiko
   debian: python-paramiko
@@ -149,6 +155,7 @@ python-qt-bindings:
     squeeze: python-qt4 python-qt4-dev pyhton-sip-dev
     wheezy: python-pyside libpyside-dev libshiboken-dev shiboken python-qt4 python-qt4-dev python-sip-dev
     sid: python-pyside libpyside-dev libshiboken-dev shiboken python-qt4 python-qt4-dev python-sip-dev
+  gentoo: PyQt4
 python-qt-bindings-gl:
   ubuntu: python-qt4-gl
 python-qt-bindings-qwt5:
@@ -159,11 +166,13 @@ python-qt4-gl:
       packages: [python-qt4-gl]
 python-qwt5-qt4:
   ubuntu: python-qwt5-qt4
+python-redis:
+  ubuntu: python-redis
+python-rosdep:
+  ubuntu: python-rosdep
 python-rospkg:
   ubuntu: python-rospkg
   fedora: python-rospkg
-python-redis:
-  ubuntu: python-redis
 python-scapy:
   ubuntu: python-scapy
 python-scipy:

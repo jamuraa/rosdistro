@@ -2,23 +2,40 @@ gbp-repos: {You must update to a newer rosdep version by calling..sudo apt-get u
 release-name: groovy
 repositories:
   actionlib:
-    url: git://github.com/wg-debs/actionlib-release.git
-    version: 1.9.5-0
+    url: git://github.com/ros-gbp/actionlib-release.git
+    version: 1.9.9-0
   bond_core:
     url: git://github.com/ros-gbp/bond_core-release.git
-    version: 1.7.4-0
+    version: 1.7.6-0
     packages:
       bond:
       bond_core:
       bondcpp:
       bondpy:
       smclib:
+  calibration:
+    url: git://github.com/ros-gbp/calibration-release.git
+    version: 0.9.21-0
+    packages:
+      calibration:
+      calibration_estimation:
+      calibration_launch:
+      calibration_msgs:
+      image_cb_detector:
+      interval_intersection:
+      joint_states_settler:
+      laser_cb_detector:
+      monocam_settler:
+      settlerlib:
   catkin:
     url: git://github.com/ros-gbp/catkin-release.git
-    version: 0.5.35-0
+    version: 0.5.50-0
+  class_loader:
+    url: git://github.com/ros-gbp/class_loader-release.git
+    version: 0.1.9-0
   common_msgs:
     url: git://github.com/ros-gbp/common_msgs-release.git
-    version: 1.9.5-0
+    version: 1.9.7-0
     packages:
       actionlib_msgs:
       common_msgs:
@@ -31,65 +48,72 @@ repositories:
       trajectory_msgs:
       visualization_msgs:
   console_bridge:
-    url: git://github.com/wg-debs/console_bridge.git
-    version: 0.1.2
+    url: git://github.com/ros-gbp/console_bridge-release.git
+    version: 0.1.2-1
   convex_decomposition:
     url: git://github.com/ros-gbp/convex_decomposition-release.git
-    version: 0.1.5
-  class_loader:
-    url: git://github.com/ros-gbp/class_loader-release.git
-    version: 0.1.1-0
+    version: 0.1.7-0
+  diagnostics:
+    url: git://github.com/ros-gbp/diagnostics-release.git
+    version: 1.7.6-0
+    packages:
+      diagnostic_aggregator:
+      diagnostic_analysis:
+      diagnostic_common_diagnostics:
+      diagnostic_updater:
+      diagnostics:
+      self_test:
   dynamic_reconfigure:
     url: git://github.com/ros-gbp/dynamic_reconfigure-release.git
-    version: 1.5.21-0
+    version: 1.5.23-0
   ecto:
     url: git://github.com/ros-gbp/ecto-release.git
-    version: 0.4.15-0
+    version: 0.4.16-0
   ecto_image_pipeline:
     url: git://github.com/ros-gbp/ecto_image_pipeline-release.git
-    version: 0.4.2
+    version: 0.4.5-0
   ecto_opencv:
     url: git://github.com/ros-gbp/ecto_opencv-release.git
-    version: 0.4.3
+    version: 0.4.11-0
   ecto_openni:
     url: git://github.com/ros-gbp/ecto_openni-release.git
-    version: 0.3.5
+    version: 0.3.7-0
   ecto_pcl:
     url: git://github.com/ros-gbp/ecto_pcl-release.git
-    version: 0.3.7
+    version: 0.3.9-0
   ecto_ros:
     url: git://github.com/ros-gbp/ecto_ros-release.git
-    version: 0.3.15
+    version: 0.3.18-0
   eigen_stl_containers:
-    url: git://github.com/wg-debs/eigen_stl_containers-release.git
-    version: 0.1.1
+    url: git://github.com/ros-gbp/eigen_stl_containers-release.git
+    version: 0.1.2-0
   fcl:
-    url: git://github.com/wg-debs/fcl.git
-    version: 0.2.4
+    url: git://github.com/ros-gbp/fcl-release.git
+    version: 0.2.5-0
   flann:
-    url: git://github.com/wg-debs/flann.git
-    version: 1.7.1
+    url: git://github.com/ros-gbp/flann-release.git
+    version: 1.7.1-7
   flirtlib:
     url: git://github.com/wg-debs/flirtlib-release.git
-    version: 0.1.5
+    version: null
   gencpp:
     url: git://github.com/ros-gbp/gencpp-release.git
-    version: 0.4.7-0
+    version: 0.4.9-0
   genlisp:
     url: git://github.com/ros-gbp/genlisp-release.git
-    version: 0.4.7-0
+    version: 0.4.8-3
   genmsg:
     url: git://github.com/ros-gbp/genmsg-release.git
-    version: 0.4.10-0
+    version: 0.4.13-0
   genpy:
     url: git://github.com/ros-gbp/genpy-release.git
-    version: 0.4.7-0
+    version: 0.4.8-3
   geometric_shapes:
-    url: git://github.com/wg-debs/geometric_shapes-release.git
-    version: 0.1.7-1
+    url: git://github.com/ros-gbp/geometric_shapes-release.git
+    version: 0.1.8-0
   geometry:
     url: git://github.com/ros-gbp/geometry-release.git
-    version: 1.9.17-0
+    version: 1.9.22-0
     packages:
       eigen_conversions:
       geometry:
@@ -103,7 +127,7 @@ repositories:
       angles:
   image_common:
     url: git://github.com/ros-gbp/image_common-release.git
-    version: 1.9.13-0
+    version: 1.9.19-0
     packages:
       camera_calibration_parsers:
       camera_info_manager:
@@ -112,7 +136,7 @@ repositories:
       polled_camera:
   image_pipeline:
     url: git://github.com/ros-gbp/image_pipeline-release.git
-    version: 1.9.6-0
+    version: 1.9.9-0
     packages:
       camera_calibration:
       depth_image_proc:
@@ -121,100 +145,148 @@ repositories:
       image_rotate:
       image_view:
       stereo_image_proc:
+  interactive_markers:
+    url: git://github.com/ros-gbp/interactive_markers-release.git
+    version: 1.9.2-0
   ivcon:
     url: git://github.com/ros-gbp/ivcon-release.git
-    version: 0.1.1
+    version: 0.1.3-0
+  joystick_drivers:
+    url: git://github.com/ros-gbp/joystick_drivers-release.git
+    version: 1.9.3-0
+    packages:
+      joy:
+      joystick_drivers:
+      ps3joy:
+      spacenav_node:
+      wiimote:
   langs:
     url: git://github.com/ros-gbp/langs-release.git
-    version: 0.4.4-0
+    version: 0.4.6-0
   langs-dev:
     url: git://github.com/ros-gbp/langs-dev-release.git
-    version: 0.2.5-0
+    version: 0.2.6-3
+  laser_geometry:
+    url: git://github.com/ros-gbp/laser_geometry-release.git
+    version: 1.5.4-0
   libccd:
-    url: git://github.com/wg-debs/libccd.git
-    version: 1.4.0
+    url: git://github.com/ros-gbp/libccd-release.git
+    version: null
   libg2o:
-    url: git://github.com/wg-debs/libg2o-release.git
-    version: 0.0.26
+    url: git://github.com/ros-gbp/libg2o-release.git
+    version: 2012.11.09-0
   moveit_core:
-    url: git://github.com/wg-debs/moveit_core-release.git
-    version: 0.1.11
+    url: git://github.com/ros-gbp/moveit_core-release.git
+    version: 0.2.3-0
   moveit_msgs:
-    url: git://github.com/wg-debs/moveit_msgs-release.git
-    version: 0.3.1
+    url: git://github.com/ros-gbp/moveit_msgs-release.git
+    version: 0.3.5-0
+  moveit_ros:
+    url: git://github.com/ros-gbp/moveit_ros-release.git
+    version: 0.2.2-0
+    packages:
+      moveit_ros:
+      moveit_ros_benchmarks: benchmarks
+      moveit_ros_perception: perception
+      moveit_ros_planning: planning
+      moveit_ros_planning_interface: planning_interface
+      moveit_ros_visualization: visualization
+      moveit_ros_warehouse: warehouse
+      moveit_ros_manipulation: manipulation
+  moveit_planners:
+    url: git://github.com/ros-gbp/moveit_planners-release.git
+    version: 0.2.1-0
+    packages:
+      moveit_planners:
+      moveit_ompl_planners_core: ompl/core
+      moveit_ompl_planners_ros_plugin: ompl/ros
+  moveit_setup_assistant:
+    url: git://github.com/ros-gbp/moveit_setup_assistant-release.git
+    version: 0.2.2-0
   nodelet_core:
     url: git://github.com/ros-gbp/nodelet_core-release.git
-    version: 1.7.4-0
+    version: 1.7.7-0
     packages:
       nodelet:
       nodelet_core:
       nodelet_topic_tools:
   object_recognition_capture:
     url: git://github.com/ros-gbp/object_recognition_capture-release.git
-    version: 0.2.11
+    version: 0.2.14-0
   object_recognition_core:
     url: git://github.com/ros-gbp/object_recognition_core-release.git
-    version: 0.4.5
+    version: 0.4.10-0
   object_recognition_linemod:
     url: git://github.com/ros-gbp/object_recognition_linemod-release.git
-    version: 0.2.1
+    version: 0.2.4-0
   object_recognition_msgs:
     url: git://github.com/ros-gbp/object_recognition_msgs-release.git
-    version: 0.3.4
+    version: 0.3.9-0
   object_recognition_reconstruction:
     url: git://github.com/ros-gbp/object_recognition_reconstruction-release.git
-    version: 0.2.9
+    version: 0.2.12-0
+  object_recognition_ros:
+    url: git://github.com/ros-gbp/object_recognition_ros-release.git
+    version: 0.1.3-0
   object_recognition_tabletop:
     url: git://github.com/ros-gbp/object_recognition_tabletop-release.git
-    version: 0.2.8
+    version: 0.2.10-0
   object_recognition_tod:
     url: git://github.com/ros-gbp/object_recognition_tod-release.git
-    version: 0.4.4
+    version: 0.4.7-0
   object_recognition_transparent_objects:
     url: git://github.com/ros-gbp/object_recognition_transparent_objects-release.git
-    version: 0.3.4
+    version: 0.3.7-0
   octomap:
-    url: git://github.com/wg-debs/octomap-release.git
-    version: 1.5.0
+    url: git://github.com/ros-gbp/octomap-release.git
+    version: 1.5.2-1
   octomap_msgs:
-    url: git://github.com/wg-debs/octomap_msgs-release.git
-    version: 0.2.2
+    url: git://github.com/ros-gbp/octomap_msgs-release.git
+    version: 0.2.4-0
+  octomap_ros:
+    url: git://github.com/ros-gbp/octomap_ros-release.git
+    version: 0.2.3-0
   octovis:
     url: git://github.com/wg-debs/octovis-release.git
-    version: 1.5.0
+    version: null
   ompl:
-    url: git://github.com/wg-debs/ompl.git
-    version: 0.11.1002053
+    url: git://github.com/ros-gbp/ompl-release.git
+    version: 0.11.1002124-0
+  opencv_candidate:
+    url: git://github.com/ros-gbp/opencv_candidate-release.git
+    version: 0.1.3-0
   opencv2:
     url: git://github.com/ros-gbp/opencv2-release.git
-    version: 2.4.2-2
+    version: 2.4.3-0
   orocos_kdl:
-    url: git://github.com/wg-debs/orocos_kdl-release.git
-    version: 1.1.99
+    url: git://github.com/ros-gbp/orocos_kdl-release.git
+    version: 1.1.99-9
+    packages:
+      kdl:
+      orocos_kdl:
+      python_orocos_kdl:
+      orocos_kinematics_dynamics:
   pcl:
     url: git://github.com/ros-gbp/pcl-release.git
-    version: 1.6.0
+    version: 1.6.0-13
   perception_pcl:
     url: git://github.com/ros-gbp/perception_pcl-release.git
-    version: 1.0.10-0
+    version: 1.0.17-0
     packages:
       pcl_ros:
       perception_pcl:
   pluginlib:
-    url: git://github.com/wg-debs/pluginlib-release.git
-    version: 1.8.5-0
-  python_orocos_kdl:
-    url: git://github.com/wg-debs/python_orocos_kdl-release.git
-    version: 1.1.99
+    url: git://github.com/ros-gbp/pluginlib-release.git
+    version: 1.9.7-0
   python_qt_binding:
     url: git://github.com/ros-gbp/python_qt_binding-release.git
-    version: 0.2.1
+    version: 0.2.3-0
   random_numbers:
-    url: git://github.com/wg-debs/random_numbers-release.git
-    version: 0.1.1
+    url: git://github.com/ros-gbp/random_numbers-release.git
+    version: 0.1.3-0
   robot_model:
-    url: git://github.com/wg-debs/robot_model-release.git
-    version: 1.9.18-0
+    url: git://github.com/ros-gbp/robot_model-release.git
+    version: 1.9.28-0
     packages:
       collada_parser:
       collada_urdf:
@@ -226,11 +298,11 @@ repositories:
       urdf_interface:
       urdf_parser:
   robot_state_publisher:
-    url: git://github.com/wg-debs/robot_state_publisher-release.git
-    version: 1.9.3-0
+    url: git://github.com/ros-gbp/robot_state_publisher-release.git
+    version: 1.9.6-0
   ros:
     url: git://github.com/ros-gbp/ros-release.git
-    version: 1.9.23-0
+    version: 1.9.32-0
     packages:
       mk: core/mk
       ros: ros
@@ -245,7 +317,7 @@ repositories:
       rosunit: tools/rosunit
   ros_comm:
     url: git://github.com/ros-gbp/ros_comm-release.git
-    version: 1.9.24-0
+    version: 1.9.32-0
     packages:
       roscpp: clients/roscpp
       rospy: clients/rospy
@@ -270,18 +342,18 @@ repositories:
       xmlrpcpp: utilities/xmlrpcpp
   ros_tutorials: 
     url: git://github.com/ros-gbp/ros_tutorials-release.git
-    version: 0.3.4-0
+    version: 0.3.6-0
     packages:
       ros_tutorials:
       roscpp_tutorials:
       rospy_tutorials:
       turtlesim:
   rosconsole_bridge:
-    url: git://github.com/wg-debs/rosconsole_bridge-release.git
-    version: 0.2.3-0
+    url: git://github.com/ros-gbp/rosconsole_bridge-release.git
+    version: 0.2.4-0
   roscpp_core:
     url: git://github.com/ros-gbp/roscpp_core-release.git
-    version: 0.3.7-0
+    version: 0.3.9-0
     packages:
       cpp_common:
       roscpp_core:
@@ -290,13 +362,16 @@ repositories:
       rostime:
   rosdoc_lite:
     url: git://github.com/ros-gbp/rosdoc_lite-release.git
-    version: 0.2.0-0
+    version: 0.2.1-0
   roslisp:
     url: git://github.com/wg-debs/roslisp-release.git
-    version: 1.9.7-0
+    version: 1.9.8-0
   rospack:
     url: git://github.com/ros-gbp/rospack-release.git
-    version: 2.1.7-0
+    version: 2.1.11-0
+  rviz:
+    url: git://github.com/ros-gbp/rviz-release.git
+    version: 1.9.11-0
   rx:
     url: git://github.com/ros-gbp/rx-release.git
     version: 1.9.9-0
@@ -309,28 +384,31 @@ repositories:
       xdot:
   sbpl:
     url: git://github.com/wg-debs/sbpl.git
-    version: 1.1.2
+    version: null
+  serial:
+    url: git://github.com/wjwwood/serial-release.git
+    version: 1.1.0-1
   shape_tools:
-    url: git://github.com/wg-debs/shape_tools-release.git
-    version: 0.1.9
+    url: git://github.com/ros-gbp/shape_tools-release.git
+    version: 0.1.12-0
   srdfdom:
-    url: git://github.com/wg-debs/srdfdom-release.git
-    version: 0.1.1
+    url: git://github.com/ros-gbp/srdfdom-release.git
+    version: 0.2.0-0
   std_msgs:
     url: git://github.com/ros-gbp/std_msgs-release.git
-    version: 0.5.3-0
+    version: 0.5.5-0
   swig-wx:
-    url: git://github.com/wg-debs/swig-wx.git
-    version: 1.3.29
+    url: https://github.com/ros-gbp/swig-wx-release.git
+    version: 1.3.29-0
   urdfdom:
-    url: git://github.com/wg-debs/urdfdom.git
-    version: 0.2.2
+    url: git://github.com/ros-gbp/urdfdom-release.git
+    version: 0.2.4-1
   urdfdom_headers:
-    url: git://github.com/wg-debs/urdfdom_headers-release.git
-    version: 0.2.0
+    url: git://github.com/ros-gbp/urdfdom_headers-release.git
+    version: 0.2.1-2
   usdfdom:
-    url: git://github.com/wg-debs/usdfdom-release.git
-    version: 0.1.3
+    url: git://github.com/ros-gbp/usdfdom-release.git
+    version: null
   vision_opencv:
     url: git://github.com/ros-gbp/vision_opencv-release.git
     version: 1.9.10-0
@@ -338,21 +416,19 @@ repositories:
       cv_bridge:
       image_geometry:
       vision_opencv:
+  warehouse_ros:
+    url: git://github.com/ros-gbp/warehouse-release.git
+    version: 0.7.10-0
+  zeroconf_comms:
+    url: https://github.com/yujinrobot-release/zeroconf_comms-release.git
+    version: 0.1.7-0
 type: gbp
 variants:
   moveit-full:
-  - actionlib
-  - common_msgs
-  - console_bridge
-  - octomap
-  - octomap_msgs
-  - ompl
-  - ros
-  - ros_comm
-  - roscpp_core
-  - rx
-  - std_msgs
-  - urdfdom
+  - moveit_msgs
+  - moveit_core
+  - moveit_ros
+  - moveit_planners 
   ros-base:
   - actionlib
   - catkin
