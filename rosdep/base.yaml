@@ -488,6 +488,7 @@ jython:
   ubuntu: jython
 kakasi:
   ubuntu: kakasi
+  debian: kakasi
 kgraphviewer:
   ubuntu: kgraphviewer
 libann-dev:
@@ -512,6 +513,7 @@ libavahi-core-dev:
   ubuntu: libavahi-core-dev
 libblas-dev:
   ubuntu: libblas-dev
+  debian: libblas-dev
 libbluetooth-dev:
   arch: bluez
   fedora: bluez-libs-devel
@@ -633,6 +635,7 @@ libhal-dev:
       packages: [hal-devel]
 libirrlicht-dev:
   ubuntu: libirrlicht-dev
+  debian: libirrlicht-dev
 libjpeg:
   ubuntu:
     'quantal': libjpeg-dev
@@ -648,6 +651,7 @@ libjpeg:
   gentoo: libjpeg-turbo
 libjson0-dev:
   ubuntu: libjson0-dev
+  debian: libjson0-dev
 libjson-java:
   debian: libjson-java
   ubuntu: libjson-java
@@ -800,6 +804,7 @@ libqt4-opengl-dev:
   gentoo: qt-opengl
 libqt4-sql-psql:
   ubuntu: libqt4-sql-psql
+  debian: libqt4-sql-psql
 libqtgui4:
   ubuntu: libqtgui4
   debian: libqtgui4
@@ -847,6 +852,7 @@ libsoqt4-dev:
   debian: libsoqt4-dev
 libspnav-dev:
   ubuntu: libspnav-dev
+  debian: libspnav-dev
 libsqlite3-dev:
   debian: libsqlite3-dev
   ubuntu: libsqlite3-dev
@@ -965,6 +971,7 @@ libxext:
   ubuntu: libxext-dev
 libxi-dev:
   ubuntu: libxi-dev
+  debian: libxi-dev
 libxml2:
   arch: libxml2
   debian: libxml2-dev
@@ -1120,8 +1127,10 @@ pkg-config:
   ubuntu: pkg-config
 libpoco-dev:
   ubuntu: libpoco-dev
+  debian: libpoco-dev
 libpocofoundation9:
   ubuntu: libpocofoundation9
+  debian: libpocofoundation9
 protobuf:
   arch: protobuf
   ubuntu: libprotobuf7
@@ -1209,6 +1218,7 @@ sqlite3:
   ubuntu: sqlite3
 spacenavd:
   ubuntu: spacenavd
+  debian: spacenavd
 subversion:
   arch: subversion
   debian: subversion
