@@ -232,6 +232,16 @@ cppunit:
   opensuse: libcppunit-devel
   rhel: cppunit-devel
   ubuntu: libcppunit-dev
+tar:
+  arch: libtar
+  debian: libtar-dev
+  fedora: libtar-devel
+  rhel: libtar-devel
+  freebsd: libtar
+  gentoo: dev-libs/libtar
+  macports: libtar
+  opensuse: libtar-devel
+  ubuntu: libtar-dev
 curl:
   arch: curl
   debian: libcurl4-openssl-dev
@@ -746,6 +756,11 @@ libpng12-dev:
   fedora: libpng-devel
   debian: libpng12-dev
   ubuntu: libpng12-dev
+libpoco-dev:
+  debian: libpoco-dev
+  ubuntu: libpoco-dev
+libpocofoundation9:
+  ubuntu: libpocofoundation9
 libpopt-dev:
   debian: libpopt-dev
   ubuntu: libpopt-dev
@@ -917,6 +932,9 @@ libusb-dev:
   debian: libusb-dev
   ubuntu: libusb-dev
   fedora: libusb-devel
+libuvc:
+  arch:
+    source: {uri: 'https://raw.github.com/ktossell/libuvc_ros/master/libuvc-arch.rdmanifest'}
 libv4l-dev:
   arch: v4l-utils
   debian: libv4l-dev
@@ -924,7 +942,13 @@ libv4l-dev:
   fedora: libv4l-devel
 libvtk:
   arch: vtk
-  ubuntu: libvtk5-dev
+  ubuntu:
+    quantal: libvtk5-dev
+    precise: libvtk5-dev
+    oneiric: libvtk5-dev default-jre-headless openjdk-6-jdk
+    natty: libvtk5-dev
+    maverick: libvtk5-dev
+    lucid: libvtk5-dev
   debian: libvtk5-dev
   fedora: vtk-devel
   macports: vtk-devel
@@ -1052,6 +1076,11 @@ mercurial:
   ubuntu: mercurial
 mongodb-dev:
   ubuntu: libmongo-client-dev mongodb-dev
+mpg123:
+  arch: mpg123
+  debian: mpg123
+  fedora: mpg123-devel
+  ubuntu: mpg123
 nite-dev:
   arch: nite
   ubuntu: nite-dev
@@ -1087,6 +1116,8 @@ openni-dev:
   arch: openni
   ubuntu: openni-dev
   fedora: openni-devel
+netcdf:
+  ubuntu: libnetcdf-dev
 netpbm:
   ubuntu: libnetpbm10-dev
   debian: libnetpbm10-dev

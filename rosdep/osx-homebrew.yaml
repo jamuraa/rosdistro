@@ -43,6 +43,10 @@ cmake:
   osx:
     homebrew:
       packages: [ cmake ]
+collada-dom:
+  osx:
+    homebrew:
+      packages: [ collada-dom ]
 cppunit:
   osx:
     homebrew:
@@ -106,6 +110,10 @@ gtk2:
   osx:
     homebrew:
       packages: [ gtk+ ]
+hddtemp:
+  osx:
+    homebrew:
+      packages: []
 hdf5:
   osx:
     homebrew:
@@ -126,6 +134,14 @@ libogg:
   osx:
     homebrew:
       packages: [ libogg ]
+libogre-dev:
+  osx:
+    homebrew:
+      packages: []
+libpoco-dev:
+  osx:
+    homebrew:
+      packages: [ poco ]
 libpng12-dev:
   osx:
     homebrew:
@@ -135,6 +151,10 @@ libtbb:
     homebrew:
       packages: [ tbb ]
 libtiff4-dev:
+  osx:
+    homebrew:
+      packages: [ libtiff ]
+libtiff-dev:
   osx:
     homebrew:
       packages: [ libtiff ]
@@ -155,6 +175,10 @@ libqhull:
   osx:
     homebrew:
       packages: [ qhull ]
+libqt4:
+  osx:
+    homebrew:
+      packages: [ qt ]
 libqt4-dev:
   osx:
     homebrew:
@@ -247,7 +271,7 @@ python-argparse:
 python-empy:
   osx:
     pip:
-      packages: [ EmPy ]
+      packages: [ empy ]
 python-imaging:
   osx:
     pip:
@@ -276,7 +300,7 @@ python-gtk2:
 python-qt-bindings:
   osx:
     homebrew:
-      packages: [ pyside, shiboken, generatorrunner ]
+      packages: [ pyside, shiboken, pyqt, sip ]
 python-rospkg:
   osx:
     pip:
@@ -327,6 +351,10 @@ suitesparse:
   osx:
     homebrew:
       packages: [ suite-sparse ]
+tango-icon-theme:
+  osx:
+    homebrew:
+      packages: [ ]
 texlive-latex-base:
   osx:
     homebrew:

@@ -156,6 +156,10 @@ repositories:
     type: git
     url: https://github.com/ros/std_msgs.git
     version: master
+#  octomap_mapping:
+#    type: svn
+#    url: https://alufr-ros-pkg.googlecode.com/svn/branches/octomap_stacks-groovy-devel/octomap_mapping
+#    version:
   octomap_msgs:
     type: svn
     url: https://alufr-ros-pkg.googlecode.com/svn/branches/octomap_stacks-groovy-devel/octomap_msgs
@@ -256,8 +260,36 @@ repositories:
     type: git
     url: https://github.com/plasmodic/ecto_openni.git
     version: master
-  zeroconf_comms:
+  zeroconf_avahi_suite:
     type: git
-    url: https://github.com/stonier/zeroconf_comms.git
+    url: https://github.com/stonier/zeroconf_avahi_suite.git
+    version: master
+  zeroconf_msgs:
+    type: git
+    url: https://github.com/stonier/zeroconf_msgs.git
+    version: master
+  ecl_tools:
+    type: git
+    url: https://github.com/stonier/ecl_tools.git
+    version: master
+  ecl_lite:
+    type: git
+    url: https://github.com/stonier/ecl_tools.git
+    version: master
+  ecl_core:
+    type: git
+    url: https://github.com/stonier/ecl_core.git
+    version: master
+  ecl_navigation:
+    type: git
+    url: https://github.com/stonier/ecl_navigation.git
+    version: master
+  ecl_manipulation:
+    type: git
+    url: https://github.com/stonier/ecl_manipulation.git
+    version: master
+  camera_info_manager_py:
+    type: git
+    url: git://github.com/jack-oquin/camera_info_manager_py.git
     version: master
 

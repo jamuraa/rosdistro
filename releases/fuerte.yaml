@@ -4,6 +4,9 @@ repositories:
   actionlib:
     url: git://github.com/ros-gbp/actionlib-release.git
     version: 1.8.7
+  camera_info_manager_py:
+    url: git://github.com/jack-oquin/camera_info_manager_py.git
+    version: null
   catkin:
     url: git://github.com/wg-debs/catkin-release.git
     version: 0.4.5
@@ -18,10 +21,10 @@ repositories:
     version: 0.4.16-0
   ecto_image_pipeline:
     url: git://github.com/ros-gbp/ecto_image_pipeline-release.git
-    version: 0.4.5-0
+    version: 0.4.7-0
   ecto_opencv:
     url: git://github.com/ros-gbp/ecto_opencv-release.git
-    version: 0.4.11-0
+    version: 0.4.17-0
   ecto_openni:
     url: git://github.com/ros-gbp/ecto_openni-release.git
     version: 0.3.7-0
@@ -29,8 +32,8 @@ repositories:
     url: git://github.com/ros-gbp/ecto_pcl-release.git
     version: 0.3.9-0
   ecto_ros:
-    url: git://github.com/ros-gbp/ecto_ros-release.git
-    version: 0.3.18-0
+    url: git://github.com/wg-debs/ecto_ros-release.git
+    version: 0.3.21-0
   fcl:
     url: git://github.com/ros-gbp/fcl-release.git
     version: 0.2.3
@@ -51,7 +54,15 @@ repositories:
     version: 0.3.10
   genpy:
     url: git://github.com/wg-debs/genpy-release.git
-    version: 0.3.7
+    version: 0.3.7    
+  image_transport_plugins:
+     url: git://github.com/ros-gbp/image_transport_plugins-release.git
+     version: 1.8.5-1
+     packages:
+        compressed_depth_image_transport:
+        compressed_image_transport:
+        image_transport_plugins:
+        theora_image_transport:    
   langs:
     url: git://github.com/wg-debs/langs-release.git
     version: 0.3.5
@@ -69,31 +80,28 @@ repositories:
     version: 0.2.8
   object_recognition_capture:
     url: git://github.com/ros-gbp/object_recognition_capture-release.git
-    version: 0.2.14-0
+    version: 0.2.15-0
   object_recognition_core:
     url: git://github.com/ros-gbp/object_recognition_core-release.git
-    version: 0.4.10-0
+    version: 0.4.11-0
   object_recognition_linemod:
     url: git://github.com/ros-gbp/object_recognition_linemod-release.git
-    version: 0.2.4-0
+    version: 0.2.5-0
   object_recognition_msgs:
     url: git://github.com/ros-gbp/object_recognition_msgs-release.git
-    version: 0.3.9-0
+    version: 0.3.11-0
   object_recognition_reconstruction:
     url: git://github.com/ros-gbp/object_recognition_reconstruction-release.git
-    version: 0.2.12-0
+    version: 0.2.15-0
   object_recognition_ros:
     url: git://github.com/ros-gbp/object_recognition_ros-release.git
-    version: 0.1.3-0
-  object_recognition_tabletop:
-    url: git://github.com/ros-gbp/object_recognition_tabletop-release.git
-    version: 0.2.10-0
+    version: 0.1.5-0
   object_recognition_tod:
     url: git://github.com/ros-gbp/object_recognition_tod-release.git
-    version: 0.4.7-0
+    version: 0.4.9-0
   object_recognition_transparent_objects:
     url: git://github.com/ros-gbp/object_recognition_transparent_objects-release.git
-    version: 0.3.7-0
+    version: 0.3.8-0
   octomap:
     url: git://github.com/ros-gbp/octomap-release.git
     version: 1.4.3-0
@@ -164,45 +172,3 @@ repositories:
     url: git://github.com/ros-gbp/urdfdom_headers-release.git
     version: 0.2.1-1
 type: gbp
-variants:
-  moveit-full:
-  - actionlib
-  - common_msgs
-  - console_bridge
-  - octomap
-  - octomap_msgs
-  - ompl
-  - ros
-  - ros_comm
-  - roscpp_core
-  - rx
-  - std_msgs
-  - urdfdom
-  ros-base:
-  - actionlib
-  - catkin
-  - common_msgs
-  - gencpp
-  - genlisp
-  - genmsg
-  - genpy
-  - ros
-  - ros_comm
-  - roscpp_core
-  - rospack
-  - std_msgs
-  ros-full:
-  - actionlib
-  - catkin
-  - common_msgs
-  - gencpp
-  - genlisp
-  - genmsg
-  - genpy
-  - ros
-  - ros_comm
-  - ros_tutorials
-  - roscpp_core
-  - rospack
-  - rx
-  - std_msgs

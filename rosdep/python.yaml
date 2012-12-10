@@ -23,7 +23,15 @@ python:
   cygwin: python
   freebsd: python
 python-argparse:
-  ubuntu: python-argparse
+  ubuntu: 
+    lucid: python-argparse
+    maverick: python-argparse
+    natty: python-argparse
+    oneiric: python-argparse
+    precise:
+      packages: []
+    quantal:
+      packages: []
   fedora: python-argparse
 python-avahi:
   ubuntu: python-avahi
@@ -40,6 +48,9 @@ python-catkin-pkg:
   fedora:
     pip:
       packages: [ catkin_pkg ]
+  osx:
+    pip:
+      packages: [ catkin-pkg ]
 python-clearsilver:
   ubuntu: python-clearsilver
   debian: python-clearsilver
@@ -70,6 +81,8 @@ python-gtk2:
   rhel: pygtk2
   gentoo: "=dev-python/pygtk-2*"
   freebsd: py-gtk2
+python-httplib2:
+  ubuntu: python-httplib2
 python-imaging:
   ubuntu: python-imaging
   debian: python-imaging
@@ -80,6 +93,8 @@ python-imaging:
   macports: py26-pil
   gentoo: dev-python/imaging
   freebsd: py27-imaging
+python-beautifulsoup:
+  ubuntu: python-beautifulsoup
 python-kitchen:
   ubuntu: python-kitchen
 python-libpcap:
@@ -134,6 +149,9 @@ python-paramiko:
   arch: python-paramiko
 python-pydot:
   ubuntu: python-pydot
+  osx:
+    pip:
+      packages: [ pydot ]
 python-pygraphviz:
   ubuntu: python-pygraphviz
 python-pyproj:
@@ -166,10 +184,15 @@ python-qt4-gl:
       packages: [python-qt4-gl]
 python-qwt5-qt4:
   ubuntu: python-qwt5-qt4
+python-rdflib:
+  ubuntu: python-rdflib
 python-redis:
   ubuntu: python-redis
 python-rosdep:
   ubuntu: python-rosdep
+  osx:
+    pip:
+      packages: [ rosdep ]
 python-rospkg:
   ubuntu: python-rospkg
   fedora: python-rospkg
