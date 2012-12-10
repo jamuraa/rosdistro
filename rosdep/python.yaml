@@ -46,6 +46,7 @@ python-bluez:
   ubuntu: python-bluez
 python-catkin-pkg:
   ubuntu: python-catkin-pkg
+  debian: python-catkin-pkg
   fedora:
     pip:
       packages: [ catkin_pkg ]
@@ -207,11 +208,13 @@ python-redis:
   debian: python-redis
 python-rosdep:
   ubuntu: python-rosdep
+  debian: python-rosdep
   osx:
     pip:
       packages: [ rosdep ]
 python-rospkg:
   ubuntu: python-rospkg
+  debian: python-rospkg
   fedora: python-rospkg
 python-scapy:
   ubuntu: python-scapy
