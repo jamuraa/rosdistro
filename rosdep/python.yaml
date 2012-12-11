@@ -127,6 +127,7 @@ python-mock:
 python-nose:
   arch: python2-nose
   ubuntu: python-nose
+  debian: python-nose
   fedora: python-nose
 python-numpy:
   ubuntu: python-numpy
