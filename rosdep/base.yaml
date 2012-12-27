@@ -720,6 +720,18 @@ omniorb:
   fedora: |
     #!/bin/bash
     echo "omniorb is not available in the Fedora package manager - please install it from source";
+libopenni-dev:
+  arch: openni
+  ubuntu: libopenni-dev
+  fedora: openni-devel
+libopenni-nite-dev:
+  arch: nite
+  ubuntu: libopenni-nite-dev
+  fedora: openni-nite-devel
+libopenni-sensor-primesense-dev:
+  arch: primesense-sensor
+  ubuntu: libopenni-sensor-primesense-dev
+  fedora: openni-primesense
 libopenscenegraph:
   ubuntu:
     quantal: openscenegraph libopenscenegraph-dev libopenscenegraph80 libopenthreads-dev libopenthreads14
@@ -867,6 +879,8 @@ libspnav-dev:
 libsqlite3-dev:
   debian: libsqlite3-dev
   ubuntu: libsqlite3-dev
+libssl-dev:
+  ubuntu: libssl-dev
 libstdc++5:
   arch: libstdc++5
   ubuntu: libstdc++5
@@ -1166,6 +1180,8 @@ ps-engine:
   arch: primesense-sensor
   ubuntu: ps-engine
   fedora: openni-primesense
+pyqt4-dev-tools:
+  ubuntu: pyqt4-dev-tools
 python-pyside:
   ubuntu: python-pyside
   debian: python-pyside
