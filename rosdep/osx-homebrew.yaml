@@ -137,7 +137,7 @@ libogg:
 libogre-dev:
   osx:
     homebrew:
-      packages: []
+      packages: [ ogre ]
 libpoco-dev:
   osx:
     homebrew:
@@ -230,8 +230,8 @@ log4cxx:
        options: [ '--universal' ]
 mercurial:
   osx:
-    homebrew:
-      packages: [ ros/fuerte/mercurial ]
+    pip:
+      packages: [ mercurial ]
 netpbm:
   osx:
     homebrew:
@@ -248,6 +248,10 @@ opengl:
   osx:
     homebrew:
       packages: []
+openmpi:
+  osx:
+    homebrew:
+      packages: [ open-mpi ]
 python-paramiko:
   osx:
     pip:
@@ -301,6 +305,10 @@ python-qt-bindings:
   osx:
     homebrew:
       packages: [ pyside, shiboken, pyqt, sip ]
+python-qt-bindings-qwt5:
+  osx:
+    homebrew:
+      packages: [ pyqwt ]
 python-rospkg:
   osx:
     pip:
@@ -354,15 +362,19 @@ suitesparse:
 tango-icon-theme:
   osx:
     homebrew:
-      packages: [ ]
+      packages: []
 texlive-latex-base:
+  osx:
+    homebrew:
+      packages: []
+texlive-latex-recommended:
   osx:
     homebrew:
       packages: []
 tinyxml:
   osx:
     homebrew:
-      packages: [ ros/fuerte/tinyxml ]
+      packages: [ tinyxml ]
 uuid:
   osx: 
     homebrew:
@@ -401,7 +413,7 @@ zziplib:
 swig-wx:
   osx:
     homebrew:
-      packages: [ ros/fuerte/swig-wx ]
+      packages: [ swig-wx ]
 opencv2:
   osx:
     homebrew:
