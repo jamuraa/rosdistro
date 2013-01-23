@@ -1210,6 +1210,7 @@ protobuf:
   debian: libprotobuf7
 protobuf-dev:
   ubuntu: libprotobuf-dev protobuf-compiler libprotoc-dev
+  debian: libprotobuf-dev protobuf-compiler libprotoc-dev
   fedora: protobuf-devel protobuf-compiler
 ps-engine:
   arch: primesense-sensor
