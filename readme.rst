@@ -15,3 +15,5 @@ Directories:
  - releases: list of released resources (e.g. GBP distro files) and targets configuration  
  - rosdep: rosdep YAML files and default configuration
  - scripts: support scripts
+
+BOOGA WOOGA!
