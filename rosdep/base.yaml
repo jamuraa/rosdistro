@@ -213,12 +213,14 @@ cmake:
   debian: cmake
   ubuntu: cmake
   fedora: cmake
+  gentoo: dev-util/cmake 
 coinor-libipopt-dev:
   debian: coinor-libipopt-dev
   ubuntu: coinor-libipopt-dev
   fedora: cmake
 collada-dom:
   ubuntu: collada-dom-dev
+  fedora: collada-dom-devel
 coreutils:
   arch: coreutils
   debian: coreutils
@@ -325,7 +327,7 @@ flex:
 fltk:
   arch: fltk
   debian: libfltk1.1-dev
-  fedora: fltk-devel
+  fedora: fltk-devel fltk-fluid
   freebsd: fltk
   gentoo: =x11-libs/fltk-1*
   macports: fltk
@@ -359,6 +361,8 @@ gforth:
   arch: gforth
   gentoo: gforth
   fedora: gforth
+gfortran:
+  ubuntu: gfortran
 gifsicle:
   debian: gifsicle
   ubuntu: gifsicle
@@ -453,6 +457,7 @@ hddtemp:
 hdf5:
   debian: libhdf5-serial-dev
   ubuntu: libhdf5-serial-dev
+  gentoo: sci-libs/hdf5
 hostapd:
   arch: hostapd
   debian: hostapd
@@ -570,6 +575,9 @@ libexpat1-dev:
 libfftw3:
   debian: libfftw3-3 libfftw3-dev
   ubuntu: libfftw3-3 libfftw3-dev
+libfreenect-dev:
+  debian: libfreenect-dev
+  ubuntu: libfreenect-dev
 libgfortran3:
   debian: libgfortran3
   ubuntu: libgfortran3
@@ -620,6 +628,8 @@ libgstreamer-plugins-base0.10-dev:
 libgsl:
   ubuntu: libgsl0-dev
   debian: libgsl0-dev
+libgtkmm:
+  ubuntu: libgtkmm-dev
 libgts:
   arch: gts
   ubuntu: libgts-dev
@@ -630,6 +640,9 @@ libgts:
 libmagick:
   ubuntu: libmagick++-dev
   debian: libmagick++-dev
+libmarble-dev:
+  ubuntu: libmarble-dev
+  debian: libmarble-dev
 libhal-dev:
   arch:
     pacman:
@@ -655,7 +668,7 @@ libjpeg:
     'maverick': libjpeg62-dev
     'lucid': libjpeg62-dev
   debian: libjpeg8-dev
-  fedora: libjpeg-devel
+  fedora: libjpeg-turbo-devel
   macports: jpeg
   arch: libjpeg-turbo
   gentoo: libjpeg-turbo
@@ -693,6 +706,9 @@ libnl-dev:
   arch: libnl
   debian: libnl-dev
   ubuntu: libnl-dev
+libois-dev:
+  debian: libois-dev
+  ubuntu: libois-dev
 libogg:
   arch: libogg
   ubuntu: libogg-dev
@@ -746,6 +762,8 @@ libopenscenegraph:
     lucid: openscenegraph libopenscenegraph-dev libopenscenegraph56 libopenthreads-dev libopenthreads12
     karmic: openscenegraph libopenscenegraph-dev libopenscenegraph56 libopenthreads-dev libopenthreads12
   debian: openscenegraph libopenscenegraph-dev libopenscenegraph80 libopenthreads-dev libopenthreads14
+libosmesa6-dev:
+  ubuntu: libosmesa6-dev
 libpcap:
   ubuntu:
     apt:
@@ -775,6 +793,7 @@ libpng12-dev:
 libpoco-dev:
   debian: libpoco-dev
   ubuntu: libpoco-dev
+  fedora: poco-devel
 libpocofoundation9:
   ubuntu: libpocofoundation9
 libpopt-dev:
@@ -796,8 +815,9 @@ libqhull:
   debian: libqhull-dev
   fedora: qhull-devel
   macports: qhull
+  gentoo: media-libs/qhull
 libqt4:
-  ubuntu: libqt4-core
+  ubuntu: [libqt4-dbus, libqt4-network, libqt4-script, libqt4-test, libqt4-xml, libqtcore4]
   arch: qt
   debian: libqt4-core
   fedora: qt
@@ -944,7 +964,9 @@ libusb-1.0-dev:
   arch: libusb
   debian: libusb-1.0-0-dev
   ubuntu: libusb-1.0-0-dev
-  fedora: libusb1-devel
+  fedora:
+    beefy: libusb1-devel
+    spherical: libusbx-devel
 libusb-dev:
   arch: libusb-compat
   debian: libusb-dev
@@ -970,6 +992,7 @@ libvtk:
   debian: libvtk5-dev
   fedora: vtk-devel
   macports: vtk-devel
+  gentoo: sci-libs/vtk
 libvtk-qt:
   debian: libvtk5-qt4-dev
   ubuntu: libvtk5-qt4-dev 
@@ -997,6 +1020,8 @@ libxaw:
   opensuse: xorg-x11-devel
   rhel: libXaw-devel
   ubuntu: libxaw7-dev
+libxenomai-dev:
+  ubuntu: libxenomai-dev
 libxext:
   arch: libxext
   debian: libxext-dev
@@ -1185,15 +1210,13 @@ protobuf:
   debian: libprotobuf7
 protobuf-dev:
   ubuntu: libprotobuf-dev protobuf-compiler libprotoc-dev
+  fedora: protobuf-devel protobuf-compiler
 ps-engine:
   arch: primesense-sensor
   ubuntu: ps-engine
   fedora: openni-primesense
 pyqt4-dev-tools:
   ubuntu: pyqt4-dev-tools
-python-pyside:
-  ubuntu: python-pyside
-  debian: python-pyside
 qt4-dev-tools:
   ubuntu: qt4-dev-tools
   debian: qt4-dev-tools
@@ -1222,7 +1245,7 @@ redis-server:
   ubuntu: redis-server
 ruby:
   ubuntu:
-    quantal: ruby1.8-dev libruby1.8 rubygems1.8
+    quantal: ruby1.9.1-dev libruby1.9.1 rubygems
     precise: ruby1.8-dev libruby1.8 rubygems1.8
     oneiric: ruby1.8-dev libruby1.8 rubygems1.8
     natty: ruby1.8-dev libruby1.8 rubygems1.8
@@ -1368,20 +1391,24 @@ tcsh:
 texlive-fonts-extra:
   debian: texlive-fonts-extra
   ubuntu: texlive-fonts-extra
+  fedora: texlive-bbm texlive-bbm-macros
 texlive-fonts-recommended:
   debian: texlive-fonts-recommended
   ubuntu: texlive-fonts-recommended
+  fedora: texlive-times texlive-helvetic
 texlive-latex-base:
   arch: texlive-base
   debian: texlive-latex-base
   ubuntu: texlive-latex-base
-  fedora: texlive-latex
+  fedora: texlive-latex texlive-parskip
 texlive-latex-extra:
   debian: texlive-latex-extra
   ubuntu: texlive-latex-extra
+  fedora: texlive-titlesec texlive-wrapfig texlive-multirow texlive-fancybox
 texlive-latex-recommended:
   debian: texlive-latex-recommended
   ubuntu: texlive-latex-recommended
+  fedora: texlive-framed texlive-threeparttable texlive-ec texlive-mdwtools
 tix:
   debian: tix
   ubuntu: tix
@@ -1536,10 +1563,14 @@ yaml:
 yaml-cpp:
   arch: yaml-cpp
   debian:
-    apt:
-      wheezy: libyaml-cpp-dev
-      sid: libyaml-cpp-dev
-    source: {md5sum: f7fb81fd4a2fbd5022daa7686e816359, uri: 'https://kforge.ros.org/rosrelease/viewvc/sourcedeps/yaml-cpp/yaml-cpp-0.2.5.rdmanifest'}
+    squeeze:
+      source: {md5sum: f7fb81fd4a2fbd5022daa7686e816359, uri: 'https://kforge.ros.org/rosrelease/viewvc/sourcedeps/yaml-cpp/yaml-cpp-0.2.5.rdmanifest'}
+    wheezy:
+      apt:
+        packages: [libyaml-cpp-dev]
+    sid:
+      apt:
+        packages: [libyaml-cpp-dev]
   ubuntu:
     quantal: libyaml-cpp-dev
     precise: yaml-cpp

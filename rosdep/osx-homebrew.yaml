@@ -371,6 +371,18 @@ texlive-latex-recommended:
   osx:
     homebrew:
       packages: []
+texlive-latex-extra:
+  osx:
+    homebrew:
+      packages: []
+texlive-fonts-recommended:
+  osx:
+    homebrew:
+      packages: []
+texlive-fonts-extra:
+  osx:
+    homebrew:
+      packages: []
 tinyxml:
   osx:
     homebrew:
@@ -378,7 +390,7 @@ tinyxml:
 uuid:
   osx: 
     homebrew:
-      packages: [ ossp-uuid ]
+      packages: [ uuid ]
       options: [ '--universal' ]
 unzip:
   osx:
@@ -400,7 +412,7 @@ yaml:
 yaml-cpp:
   osx:
     homebrew:
-      packages: [ yaml-cpp ]
+      packages: [ yaml-cpp-0.3 ]
       depends: [ yaml ]
 zlib:
   osx:

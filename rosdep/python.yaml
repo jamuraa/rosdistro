@@ -24,6 +24,7 @@ python:
   cygwin: python
   freebsd: python
 python-argparse:
+  debian: python-argparse
   ubuntu: 
     lucid: python-argparse
     maverick: python-argparse
@@ -33,11 +34,14 @@ python-argparse:
       packages: []
     quantal:
       packages: []
-  fedora: python-argparse
+  fedora: python
   debian: python-argparse
 python-avahi:
   ubuntu: python-avahi
   debian: python-avahi
+python-beautifulsoup:
+  ubuntu: python-beautifulsoup
+  debian: python-beautifulsoup
 python-bluez:
   arch: python-pybluez
   debian: python-bluez
@@ -46,13 +50,16 @@ python-bluez:
   rhel: python-bluez
   ubuntu: python-bluez
 python-catkin-pkg:
-  ubuntu: python-catkin-pkg
+  debian:
+    pip:
+      packages: [ catkin-pkg ]
   fedora:
     pip:
-      packages: [ catkin_pkg ]
+      packages: [ catkin-pkg ]
   osx:
     pip:
       packages: [ catkin-pkg ]
+  ubuntu: python-catkin-pkg
 python-clearsilver:
   ubuntu: python-clearsilver
   debian: python-clearsilver
@@ -70,7 +77,11 @@ python-cwiid:
   gentoo: app-misc/cwiid
   rhel: cwiid
   ubuntu: python-cwiid
+python-deap-pip:
+  ubuntu:
+    pip: deap
 python-empy:
+  debian: python-empy
   ubuntu: python-empy
   fedora: python-empy
   debian: python-empy
@@ -100,9 +111,6 @@ python-imaging:
   macports: py26-pil
   gentoo: dev-python/imaging
   freebsd: py27-imaging
-python-beautifulsoup:
-  ubuntu: python-beautifulsoup
-  debian: python-beautifulsoup
 python-kitchen:
   ubuntu: python-kitchen
 python-libpcap:
@@ -126,6 +134,7 @@ python-mock:
   debian: python-mock
 python-nose:
   arch: python2-nose
+  debian: python-nose
   ubuntu: python-nose
   debian: python-nose
   fedora: python-nose
@@ -139,9 +148,6 @@ python-numpy:
   macports: py26-numpy
   gentoo: dev-python/numpy
   freebsd: py-numpy
-python-opengl: 
-  ubuntu: python-opengl
-  debian: python-opengl
 python-omniorb:
   ubuntu:
    lucid: python-omniorb2 omniidl4-python
@@ -150,6 +156,10 @@ python-omniorb:
    oneiric: python-omniorb omniidl-python
    precise: python-omniorb omniidl-python
    quantal: python-omniorb omniidl-python
+python-opengl: 
+  ubuntu: python-opengl
+  fedora: PyOpenGL
+  debian: python-opengl
 python-paramiko:
   ubuntu: python-paramiko
   debian: python-paramiko
@@ -160,14 +170,28 @@ python-paramiko:
   gentoo: dev-python/paramiko
   freebsd: py27-paramiko
   arch: python-paramiko
+python-pexpect:
+  ubuntu: python-pexpect
+python-psutil:
+  ubuntu: python-psutil
+  debian: python-psutil
 python-pydot:
   ubuntu: python-pydot
   debian: python-pydot
   osx:
     pip:
       packages: [ pydot ]
+  fedora: pydot
+python-pygame:
+  ubuntu: python-pygame
 python-pygraphviz:
   ubuntu: python-pygraphviz
+python-pymodbus:
+  ubuntu: 
+    precise: python-pymodbus
+  debian: python-pymodbus
+python-pymongo:
+  ubuntu: python-pymongo
 python-pyproj:
   ubuntu:
     apt:
@@ -175,6 +199,9 @@ python-pyproj:
   debian:
     apt:
       packages: [python-pyproj]
+python-pyside:
+  ubuntu: python-pyside
+  debian: python-pyside
 python-qt-bindings:
   arch: python2-pyqt
   ubuntu:
@@ -188,15 +215,20 @@ python-qt-bindings:
     wheezy: python-pyside libpyside-dev libshiboken-dev shiboken python-qt4 python-qt4-dev python-sip-dev
     sid: python-pyside libpyside-dev libshiboken-dev shiboken python-qt4 python-qt4-dev python-sip-dev
   gentoo: PyQt4
+  fedora: PyQt4 PyQt4-devel sip-devel
 python-qt-bindings-gl:
   ubuntu: python-qt4-gl
+  fedora: PyQt4
   debian: python-qt4-gl
 python-qt-bindings-qwt5:
   ubuntu: python-qwt5-qt4
-  debian: python-qwt5-qt4
+  fedora: PyQwt-devel
 python-qt4-gl:
   ubuntu: 
     apt: 
+      packages: [python-qt4-gl]
+  debian:
+    apt:
       packages: [python-qt4-gl]
 python-qwt5-qt4:
   ubuntu: python-qwt5-qt4
@@ -208,13 +240,28 @@ python-redis:
   ubuntu: python-redis
   debian: python-redis
 python-rosdep:
-  ubuntu: python-rosdep
+  debian:
+    pip:
+      packages: [ rosdep ]
   osx:
     pip:
       packages: [ rosdep ]
+  ubuntu: python-rosdep
+  fedora:
+    pip:
+      packages: [ rosdep ]
+python-rosinstall:
+  fedora:
+    pip:
+      packages: [ rosinstall ]
 python-rospkg:
+  debian:
+    pip:
+      packages: [ rospkg ]
   ubuntu: python-rospkg
-  fedora: python-rospkg
+  fedora:
+    pip:
+      packages: [ rospkg ]
 python-scapy:
   ubuntu: python-scapy
   debian: python-scapy
@@ -257,7 +304,7 @@ python-sphinx:
 python-support:
   ubuntu: python-support
   debian: python-support
-  fedora: notneeded
+  fedora: python
 python-svn: 
   ubuntu: python-svn
   debian: python-svn
@@ -270,14 +317,17 @@ python-tk:
 python-twisted-core:
   ubuntu: python-twisted-core
   debian: python-twisted-core
-python-psutil:
-  ubuntu: python-psutil
-  debian: python-psutil
+python-wstool:
+  fedora:
+    pip:
+      packages: [ wstool ]
 python-yaml:
   ubuntu: python-yaml
   debian: python-yaml
   opensuse: python-yaml
-  fedora: PyYAML
+  fedora:
+    pip:
+      packages: [ PyYAML ]
   rhel: PyYAML
   centos: PyYAML
   arch: python2-yaml
@@ -292,10 +342,3 @@ python-yaml:
         python setup.py install 
       fi
   freebsd: py27-yaml
-python-pymodbus:
-  ubuntu: 
-    precise: python-pymodbus
-  debian: python-pymodbus
-python-deap-pip:
-  ubuntu:
-    pip: deap
