@@ -220,6 +220,7 @@ coinor-libipopt-dev:
   fedora: cmake
 collada-dom:
   ubuntu: collada-dom-dev
+  debian: collada-dom-dev
   fedora: collada-dom-devel
 coreutils:
   arch: coreutils
